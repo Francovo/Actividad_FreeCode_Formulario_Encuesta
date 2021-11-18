@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title >Encuesta / Formulario --</title>
+    <h1 id="title"> Formulario </h1>
+    <p id="description">Bienvenido a esta pequeña encuesta de satisfaccion</p>
+</head>
+  <body>
+    <form class="container" id="survey-form">
+      
+        <label for="name" id="name-label">Nombre</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Ingrese su nombre Completo"
+          id="name"
+          required
+        />
+     <br>
+
+        <label for="email" id="email-label">Email</label>
+        <input
+        name="email"
+          type="email"
+          placeholder="Ingrese su email"
+          id="email"
+          required
+        />
+        <br>
+      
+        <label id="number-label">Telefono</label>
+        <input
+          type="number"
+          placeholder="Ingrese su numero de contacto"
+          id="number"
+          min="10"
+          max="10"
+          required
+        />
+      
+      <br>
+
+        <label for="dropdown">Calificacion del servicio</label>
+        <select id="dropdown" >
+          <option value="" disabled selected>¿Cuantas estrellas merece?</option>
+          <option value="1">⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+          <option value="4">⭐⭐⭐⭐</option>
+          <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+    <br>
+     
+        <label for="condiciones" id="condiciones_1">¿El establecimiento estaba en condiciones?</label> <br>
+        <br>
+        <input id="condiciones_1" type="radio" id="6" name="condiciones" value="6" /> 
+        <label for="condiciones"> Si </label>
+        <br>
+        <input id="condiciones_1" type="radio" id="7" name="condiciones" value="7" /> 
+        <label for="condiciones"> A medias </label>
+        <br>
+        <input id="condiciones_1" type="radio" id="8" name="condiciones" value="8" /> 
+        <label for="condiciones"> No </label>
+        <br>
+        <br>
+
+      <div class="container3">
+        <label for="checkbox">¿Que destacaria del hotel?</label> <br />
+        <label>
+          <input id="checkbox" type="checkbox" name="servicio" value="serv"/>
+          <label for="checkbox">  Atencion al cliente </label>
+          <br/>
+          <input id="checkbox" type="checkbox" name="servicio" value="servi" />
+          <label for="checkbox">  Comida </label>
+          <br/>
+          <input id="checkbox" type="checkbox" name="servicio" value="servic"/>
+          <label for="checkbox">  Limpieza </label>
+          <br/>
+          <input id="checkbox" type="checkbox" name="servicio" value="servici"/>
+          <label for="checkbox">  Decoracion </label>
+          <br/>
+      </div>
+
+        <label >Sugerencias para mejorar la calidad del hotel</label>
+        <br />
+        <textarea
+          name="instructions"
+          id="textarea"
+          cols="30"
+          rows="3"
+          placeholder="ingresa aqui tu sugerencia"
+        ></textarea>
+        <br>
+
+      <button type="submit" id="submit" value="Place Order">Enviar</button>
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,23 @@
+body{
+    background-color: rgba(105, 97, 22, 0.432);
+}
+
+#description{
+    background: white;
+    padding: 20px;
+    text-align: center;
+    font-size:120%;
+}
+
+
+.container{
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 50px;
+    border: solid black;
+    border-width: 5px;
+    width: 40%;
+    padding: 5%;
+}
+
